@@ -9,7 +9,7 @@ class hostapd (
   String $ssid,
   String $channel, # can potentially also be 'acs_survey' along with all the various numbers
   String $wpa_passphrase,
-  Integer $wpa_value = $hostapd::params::value,
+  Integer $wpa_value = $hostapd::params::wpa_value,
   Enum['a','b','g','ad']  $hw_mode = 'a',
   String $country_code = 'AU',
   String $bridge = 'br0',
