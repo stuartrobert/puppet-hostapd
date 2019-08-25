@@ -9,7 +9,7 @@ class hostapd (
   String $ssid,
   String $wpa_passphrase,
   String $channel, # can potentially also be 'acs_survey' along with all the various numbers
-  Enum['a','b','g']  $hw_mode = 'a',
+  Enum['a','b','g','ad']  $hw_mode = 'a',
   String $country_code = 'AU',
   String $bridge = 'br0',
   String $driver = 'nl80211',
