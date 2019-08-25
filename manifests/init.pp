@@ -15,7 +15,7 @@ class hostapd (
   String $driver = 'nl80211',
   String $interface = $hostapd::params::interface,
   String $config_file = $hostapd::params::config_file,
-) inherits params {
+) inherits ::hostapd::params {
 
   # lets install some s/w first
   $hostap_pkgs = [
