@@ -25,7 +25,7 @@ class hostapd (
   # now lets configure the service
   file { $config_file :
     ensure  => 'file',
-    content => epp("{module_name}/hostapd.conf.epp"),
+    content => epp("${module_name}/hostapd.conf.epp"),
     mode    => '0640',
     notify  => Service['hostapd'],
   }
