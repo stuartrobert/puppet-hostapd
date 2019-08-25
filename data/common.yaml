@@ -1,1 +1,4 @@
 ---
+hostapd::ssid: 'testing'
+hostapd::psk: 'testing'
+#hostapd::channel: 'acs_survey'
