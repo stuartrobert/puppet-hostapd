@@ -1313,7 +1313,7 @@ own_ip_addr=127.0.0.1
 # Note that WPA3 is also configured with bit1 since it uses RSN just like WPA2.
 # In other words, for WPA3, wpa=2 is used the configuration (and
 # wpa_key_mgmt=SAE for WPA3-Personal instead of wpa_key_mgmt=WPA-PSK).
-#wpa=2
+wpa=<%= $hostapd::wpa_value %>
 
 # WPA pre-shared keys for WPA-PSK. This can be either entered as a 256-bit
 # secret in hex format (64 hex digits), wpa_psk, or as an ASCII passphrase
