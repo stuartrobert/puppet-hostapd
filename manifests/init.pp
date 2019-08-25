@@ -30,6 +30,7 @@ class hostapd (
     ensure  => 'file',
     content => epp('hostapd/hostapd.conf.epp'),
     mode    => '0640',
+    notify  => Service['hostapd'],
   }
 
   # now lets make sure the service is running:
