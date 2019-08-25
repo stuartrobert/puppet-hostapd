@@ -7,7 +7,7 @@
 #   include hostapd
 class hostapd (
   String $ssid,
-  String $psk,
+  String $wpa_passphrase,
   String $channel, # can potentially also be 'acs_survey' along with all the various numbers
   Enum['a','b','g']  $hw_mode = 'a',
   String $country_code = 'AU',
